@@ -1,0 +1,209 @@
+@media (max-width: 750px) {
+    *{
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Header Responsivity */
+    header {
+        height: 3rem;
+        justify-content: space-between;
+    }
+
+    header img {
+        width: 60px;
+    }
+
+    .nav-button{ 
+        display: block;
+        z-index: 1;
+    }
+
+    ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;  
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        pointer-events: none;
+        background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    }
+
+    ul a {
+        font-size: 24px;
+    }
+
+    ul li:nth-child(1) a {
+        transition: 0.5s 0.4s;
+    }
+    ul li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+    ul li:nth-child(3) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav.active .nav-button {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+    .nav.active .nav-button::before {
+        transform: rotate(135deg);
+    }
+    .nav.active .nav-button::after {
+        transform: rotate(-135deg);
+        top: -6px;
+    }
+
+    .nav.active ul {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all
+    }
+    
+
+    /* ------------------- */
+
+
+    /* Balle Bot Presentation Responsivity */
+
+    .ballebot-presentation {
+        width: 390px;
+        margin-top: 20px;
+    }
+
+    .ballebot-presentation img{
+        width: 250px;
+    }
+
+    .ballebot-text {
+        gap: 30px;
+    }
+    .ballebot-text h1{
+        font-size: 35px;
+    }
+    .ballebot-text h2{
+        font-size: 14px;
+    }
+    .ballebot-text button {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+    }
+    /* --------------------------- */
+
+
+    /* Bot Description Responsivity */
+    .bot-description{
+        width: 390px;
+        height: 430px;
+        padding-bottom: 75px;
+    }
+
+    .bot-description h3{
+        font-size: 20px;
+        padding-bottom: 35px;
+        padding-top: 25px;
+    }
+
+    .bot-description p{
+        font-family: 'Sarala', sans-serif;
+        font-size: 14px;
+        color: #ECD6C4;
+        
+    }
+
+    /* ------------------------------------------- */
+
+
+
+    /* Footer Responsivity */
+    footer img {
+        width: 150px;
+    }
+
+    /* ------------------------------------------- */
+}
+
+
+@media (max-width: 460px) {
+    *{
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        height: 3rem;
+    }
+
+
+    .ballebot-presentation {
+        width: 340px;
+        margin-top: 20px;
+    }
+
+    .ballebot-presentation img{
+        width: 250px;
+    }
+
+    .ballebot-text {
+        gap: 30px;
+    }
+    .ballebot-text h1{
+        font-size: 35px;
+    }
+    .ballebot-text h2{
+        font-size: 14px;
+    }
+    .ballebot-text button {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .bot-description{
+        width: 340px;
+        gap: 20px;
+        padding-bottom: 62px;
+    }
+
+    .bot-description h3{
+        font-size: 20px;
+        padding-bottom: 35px;
+    }
+
+    .bot-description p{
+        font-family: 'Sarala', sans-serif;
+        font-size: 14px;
+        color: #ECD6C4;
+        
+    }
+
+    footer img {
+        width: 150px;
+    }
+}

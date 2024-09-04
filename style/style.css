@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; 
+    text-decoration: none;   
+}
+
+body { 
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+/* Header Style */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7.2rem;
+    padding: 40px;
+    border-bottom: solid 0.3px white;
+}
+
+header img {
+    width: 75px;
+    transition: border 0.3s ease, border-radius 0.3s ease;
+}
+header img:hover {
+    border: white 0.4px solid;
+    border-radius: 50%;
+     
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+a{
+    color: #FFF2E7;;
+    font-size: 1.2rem;
+    font-family: 'Sarala', sans-serif;
+    transition: 0.3s ease;
+}
+a:hover{
+    color: #fff2e7ad;
+}
+
+.nav-button{ 
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+}
+
+.nav-button::before,
+.nav-button::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* ------------------------------------------ */
+
+
+
+/* Main Style */
+
+
+/* Balle Bot Section Style */
+
+.ballebot-presentation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.ballebot-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.ballebot-text h1{
+    font-family: 'Righteous', cursive;
+    font-size: 64px;
+    color: #FFF2E7;
+}
+
+.ballebot-text h2{
+    font-family: 'Sarala', sans-serif;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+.ballebot-text button {
+    width: 180px;
+    height: 60px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-family: 'Sarala', sans-serif;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background-color: #ecd6c4;
+    border: none;
+    transition: 0.3s ease;
+}
+.ballebot-text button:hover{
+    background-color: rgba(236, 214, 196, 0.699);
+}
+
+/* ---------------------------------------*/
+
+/* What does she do for you? Style */
+
+.bot-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 0.4px solid white;
+}
+
+.bot-description h3{
+    border-top: 0.4px solid;
+    font-family: 'Righteous', cursive;
+    color: #FFF2EF;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.bot-description p{
+    font-family: 'Sarala', sans-serif;
+    font-size: 18px;
+    color: #ECD6C4;
+}
+
+/* ------------------------------------------ */
+
+/* Main content style END */
+
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+}
+
+footer img {
+    width: 250px;
+}
+
+/* ------------------- */
